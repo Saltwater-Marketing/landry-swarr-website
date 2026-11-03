@@ -27,6 +27,7 @@ breadcrumbs: [["Free Family Exposure Guide", "/5-things-everyone-needs-to-know-f
   </div>
   <div class="contact__form card">
     <h2>Request your free copy</h2>
+    {% set formId = site.ghl.ebookFormId %}{% set formName = site.ghl.ebookFormName %}
     {% include "ghl-form.njk" %}
   </div>
 </div>

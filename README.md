@@ -15,7 +15,7 @@ The static rebuild of www.landryswarr.com (it replaces the old WordPress/Avada s
 | Header, footer, tracking, SEO tags, schema | `src/_includes/base.njk`, `src/_includes/schema.njk` |
 | Interior page layout (hero, sidebar, CTA, form) | `src/_includes/page.njk` |
 | Blog post layout | `src/_includes/post.njk` |
-| Case review form (GoHighLevel embed) | `src/_includes/ghl-form.njk` |
+| Case review form (GoHighLevel embed) | `src/_includes/ghl-form.njk` (main form `ghl.formId`; ebook page uses `ghl.ebookFormId`) |
 | Styles | `src/assets/css/site.css` |
 | Images | `src/images/` (WebP) |
 | PDFs | `src/files/` |

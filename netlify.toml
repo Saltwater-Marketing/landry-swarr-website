@@ -89,6 +89,97 @@
   to = "/blog/"
   status = 301
 
+# Pages not updated since 2013, retired
+[[redirects]]
+  from = "/asbestos-info/stage-1-mesothelioma/"
+  to = "/diagnosing-meso/"
+  status = 301
+
+[[redirects]]
+  from = "/asbestos-info/stage-2-mesothelioma/"
+  to = "/diagnosing-meso/"
+  status = 301
+
+[[redirects]]
+  from = "/asbestos-info/stage-3-mesothelioma/"
+  to = "/diagnosing-meso/"
+  status = 301
+
+[[redirects]]
+  from = "/asbestos-info/stage-4-mesothelioma/"
+  to = "/diagnosing-meso/"
+  status = 301
+
+[[redirects]]
+  from = "/asbestos-info/mesothelioma-life-expectancy/"
+  to = "/meso-general-info/"
+  status = 301
+
+[[redirects]]
+  from = "/asbestos-info/meso-latency-periods/"
+  to = "/meso-general-info/"
+  status = 301
+
+[[redirects]]
+  from = "/asbestos-info/mesothelioma-research/"
+  to = "/asbestos-info/more-research/"
+  status = 301
+
+[[redirects]]
+  from = "/mesothelioma-types/testicular-mesothelioma/"
+  to = "/mesothelioma-types/"
+  status = 301
+
+[[redirects]]
+  from = "/mesothelioma-types/peritoneal-mesothelioma/"
+  to = "/mesothelioma-types/"
+  status = 301
+
+[[redirects]]
+  from = "/asbestos-info/asbestos-exposure-in-the-louisiana-marine-industry/"
+  to = "/mesothelioma-types/louisiana-shipyard-asbestos-exposure/"
+  status = 301
+
+[[redirects]]
+  from = "/asbestos-info/asbestos-exposure-at-bollinger-shipyards-in-louisiana/"
+  to = "/mesothelioma-types/louisiana-shipyard-asbestos-exposure/"
+  status = 301
+
+[[redirects]]
+  from = "/asbestos-info/asbestos-exposure-at-avondale-shipyards-in-louisiana/"
+  to = "/mesothelioma-types/louisiana-shipyard-asbestos-exposure/"
+  status = 301
+
+[[redirects]]
+  from = "/asbestos-info/asbestos-exposure-at-louisiana-power-plants/"
+  to = "/asbestos-info/louisiana-asbestos-jobsites/"
+  status = 301
+
+[[redirects]]
+  from = "/asbestos-info/asbestos-exposure-at-chemical-plants-in-louisiana/"
+  to = "/asbestos-info/louisiana-asbestos-jobsites/"
+  status = 301
+
+[[redirects]]
+  from = "/asbestos-info/louisiana-paper-mill-asbestos-exposure/"
+  to = "/asbestos-info/louisiana-asbestos-jobsites/"
+  status = 301
+
+[[redirects]]
+  from = "/asbestos-info/louisiana-oil-refinery-asbestos-exposure/"
+  to = "/asbestos-info/louisiana-asbestos-jobsites/"
+  status = 301
+
+[[redirects]]
+  from = "/asbestos-info/asbestos-claims/"
+  to = "/asbestos-info/asbestos-settlements/"
+  status = 301
+
+[[redirects]]
+  from = "/disclaimer/"
+  to = "/terms-conditions/"
+  status = 301
+
 # WordPress system paths
 [[redirects]]
   from = "/wp-admin/*"
@@ -263,7 +354,7 @@
 
 [[redirects]]
   from = "/asbestos-info/mesothelioma-types/peritoneal-mesothelioma/"
-  to = "/mesothelioma-types/peritoneal-mesothelioma/"
+  to = "/mesothelioma-types/"
   status = 301
 
 [[redirects]]
@@ -273,7 +364,7 @@
 
 [[redirects]]
   from = "/asbestos-info/mesothelioma-types/testicular-mesothelioma/"
-  to = "/mesothelioma-types/testicular-mesothelioma/"
+  to = "/mesothelioma-types/"
   status = 301
 
 [[redirects]]
