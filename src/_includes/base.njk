@@ -65,7 +65,7 @@
           <div class="nav__panel">
             <ul>
               {% for c in item.children %}
-              <li><a href="{{ c.url }}"{% if page.url == c.url %} aria-current="page"{% endif %}><span>{{ c.label }}</span>{% if c.note %}<small>{{ c.note }}</small>{% endif %}</a></li>
+              <li><a href="{{ c.url }}"{% if page.url == c.url %} aria-current="page"{% endif %}>{{ c.label }}</a></li>
               {% endfor %}
             </ul>
           </div>
