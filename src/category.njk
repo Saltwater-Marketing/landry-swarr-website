@@ -1,0 +1,27 @@
+---
+layout: base.njk
+pagination:
+  data: catList
+  size: 1
+  alias: cat
+permalink: "/category/{{ cat }}/"
+eleventyComputed:
+  title: "{{ nav.categories[cat] }} Articles | Landry & Swarr Blog"
+  description: "Articles about {{ nav.categories[cat] | lower }} from Louisiana mesothelioma and toxic exposure lawyers Landry & Swarr."
+  breadcrumbs: [["Blog", "/blog/"], ["{{ nav.categories[cat] }}", "/category/{{ cat }}/"]]
+catList: ["mesothelioma", "asbestos", "benzene", "talc", "genetics", "louisiana", "verdicts", "settlements", "lung-cancer", "tips", "chrysotile", "shaker-cases", "event", "uncategorized"]
+bodyClass: interior
+---
+<section class="phero">
+  <div class="wrap phero__in">
+    {% include "crumbs.njk" %}
+    <h1>{{ nav.categories[cat] }}</h1>
+    <p class="phero__sub">Articles filed under {{ nav.categories[cat] | lower }}.</p>
+  </div>
+</section>
+<section class="band">
+  <div class="wrap">
+    <div class="cards cards--3">{% for p in collections.posts | taggedPosts(cat) %}{% include "post-card.njk" %}{% endfor %}</div>
+  </div>
+</section>
+{% include "case-review.njk" %}

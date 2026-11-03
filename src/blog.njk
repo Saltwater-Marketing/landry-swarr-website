@@ -1,0 +1,29 @@
+---
+layout: base.njk
+pagination:
+  data: collections.posts
+  size: 12
+  alias: posts
+permalink: "/blog/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}"
+eleventyComputed:
+  title: "Mesothelioma, Asbestos & Benzene News Blog{% if pagination.pageNumber > 0 %} – Page {{ pagination.pageNumber + 1 }}{% endif %} | Landry & Swarr"
+description: "News and insights from Louisiana mesothelioma lawyers Landry & Swarr on asbestos, talcum powder, benzene, verdicts, treatment and patient resources."
+bodyClass: interior
+breadcrumbs: [["Blog", "/blog/"]]
+---
+{% set heading = "Blog & News" %}
+<section class="phero">
+  <div class="wrap phero__in">
+    {% include "crumbs.njk" %}
+    <h1>Blog &amp; News</h1>
+    <p class="phero__sub">Updates on mesothelioma, asbestos, talc and benzene litigation, treatment research and resources for Louisiana families.</p>
+    <p class="chips">{% for k, v in nav.categories %}{% if k != "uncategorized" and (collections.posts | taggedPosts(k) | length) > 2 %}<a class="chip chip--light" href="/category/{{ k }}/">{{ v }}</a>{% endif %}{% endfor %}</p>
+  </div>
+</section>
+<section class="band">
+  <div class="wrap">
+    <div class="cards cards--3">{% for p in posts %}{% include "post-card.njk" %}{% endfor %}</div>
+    {% include "pager.njk" %}
+  </div>
+</section>
+{% include "case-review.njk" %}

@@ -1,0 +1,35 @@
+---
+layout: base.njk
+title: "Contact Us | Law Firm of Landry & Swarr | New Orleans, Louisiana"
+description: "Contact Landry & Swarr at (504) 299-1214 or visit us at 1100 Poydras St., Energy Centre – Suite 2000, New Orleans, LA 70163. Free, confidential case reviews."
+heading: "Contact Us"
+permalink: /contact-us/
+bodyClass: interior
+breadcrumbs: [["Contact Us", "/contact-us/"]]
+---
+<section class="phero">
+  <div class="wrap phero__in">
+    {% include "crumbs.njk" %}
+    <h1>Contact Landry &amp; Swarr</h1>
+    <p class="phero__sub">Free, confidential case reviews for Louisiana families. Call us, or send a message and a member of our staff will contact you soon.</p>
+  </div>
+</section>
+<div class="wrap contact">
+  <div class="contact__info">
+    <div class="side-card">
+      <p class="side-card__label">Call</p>
+      <p class="contact__big"><a href="{{ site.phoneHref }}">{{ site.phone }}</a></p>
+      <p>Fax: {{ site.fax }}</p>
+      <p class="side-card__label">Email</p>
+      <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+      <p class="side-card__label">Office</p>
+      <address>{{ site.legalName }}<br>{{ site.address.street }}<br>{{ site.address.city }}, {{ site.address.region }} {{ site.address.zip }}</address>
+      <p><span lang="es">Se Habla Español</span></p>
+    </div>
+    <iframe class="contact__map" src="{{ site.mapEmbed }}" title="Map to Landry & Swarr" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+  </div>
+  <div class="contact__form card">
+    <h2>Send us a message</h2>
+    {% include "ghl-form.njk" %}
+  </div>
+</div>

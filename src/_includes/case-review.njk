@@ -1,0 +1,19 @@
+<section class="review" id="case-review" aria-labelledby="review-h">
+  <div class="wrap review__grid">
+    <div class="review__copy">
+      <p class="eyebrow eyebrow--light">Free &amp; confidential</p>
+      <h2 id="review-h">{{ reviewHeading or "Talk with a Louisiana mesothelioma lawyer" }}</h2>
+      <p>{{ reviewText or "Tell us what happened. A member of our team will follow up quickly, and your consultation is free." }}</p>
+      <ul class="ticks ticks--light">
+        <li>Mesothelioma, asbestos lung cancer &amp; asbestosis</li>
+        <li>Talcum powder and cosmetic talc exposure</li>
+        <li>Benzene-related leukemia, MDS &amp; lymphoma</li>
+        <li>Families who lost a loved one</li>
+      </ul>
+      <p class="review__phone">Prefer to talk now? <a href="{{ site.phoneHref }}">{{ site.phone }}</a></p>
+    </div>
+    <div class="review__form card">
+      {% include "ghl-form.njk" %}
+    </div>
+  </div>
+</section>

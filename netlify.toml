@@ -1,0 +1,409 @@
+[build]
+  command = "npm run build"
+  publish = "_site"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# ---------------------------------------------------------------
+# 301 redirects: old WordPress URLs -> new URLs (keeps SEO value)
+# ---------------------------------------------------------------
+# Renamed / merged / retired pages
+[[redirects]]
+  from = "/asbestosis/"
+  to = "/asbestos-lawyer/"
+  status = 301
+
+[[redirects]]
+  from = "/asbestosis-old/"
+  to = "/asbestos-lawyer/"
+  status = 301
+
+[[redirects]]
+  from = "/what-is-friable-asbestos-and-why-is-it-important/"
+  to = "/what-is-friable-asbestos/"
+  status = 301
+
+[[redirects]]
+  from = "/does-asbestos-exposure-cause-copd/"
+  to = "/can-asbestos-exposure-cause-copd/"
+  status = 301
+
+[[redirects]]
+  from = "/asbestosis-vs-mesothelioma/"
+  to = "/asbestosis-vs-mesothelioma-5-facts-you-need-to-know/"
+  status = 301
+
+[[redirects]]
+  from = "/asbestos-info/benzene-exposure-in-louisiana/"
+  to = "/benzene-exposure-in-louisiana/"
+  status = 301
+
+[[redirects]]
+  from = "/free-meso-info/"
+  to = "/5-things-everyone-needs-to-know-family-exposure-ebook-download/"
+  status = 301
+
+[[redirects]]
+  from = "/home/"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/sample-page/"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/no-access/"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/early-screening-family-support-can-improve-breast-cancer-outcomes/"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/how-men-can-stay-strong-despite-mesothelioma-this-mens-health-month/"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/5-things-meso-patients-can-teach-us-about-coping-with-covid-19/"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/how-louisiana-cancer-prevention-programs-are-saving-lives-during-national-lung-cancer-prevention-month/"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/7-ways-to-battle-grief-during-the-holidays-when-its-taking-a-toll/"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/why-covid-19-is-especially-dangerous-for-mesothelioma-patients/"
+  to = "/blog/"
+  status = 301
+
+# WordPress system paths
+[[redirects]]
+  from = "/wp-admin/*"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/wp-login.php"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/wp-json/*"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/xmlrpc.php"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/feed/*"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/feed"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/comments/feed/*"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/author/*"
+  to = "/our-firm/resumes/"
+  status = 301
+
+[[redirects]]
+  from = "/tag/*"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/category/research/*"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/category/second-hand-exposure/*"
+  to = "/category/asbestos/"
+  status = 301
+
+[[redirects]]
+  from = "/category/toxic-torts/*"
+  to = "/category/benzene/"
+  status = 301
+
+[[redirects]]
+  from = "/category/:slug/page/*"
+  to = "/category/:slug/"
+  status = 301
+
+[[redirects]]
+  from = "/category/:slug/feed/*"
+  to = "/category/:slug/"
+  status = 301
+
+[[redirects]]
+  from = "/download/346/*"
+  to = "/files/5-things-family-exposure.pdf"
+  status = 301
+
+[[redirects]]
+  from = "/download/*"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/wp-content/uploads/2025/08/Journal-RecentDev-Aug-2025.pdf"
+  to = "/files/Journal-RecentDev-Aug-2025.pdf"
+  status = 301
+
+[[redirects]]
+  from = "/blog/page/1/"
+  to = "/blog/"
+  status = 301
+
+# Old nested URL aliases WordPress used to forward
+[[redirects]]
+  from = "/areas-of-practice/asbestosis/"
+  to = "/asbestos-lawyer/"
+  status = 301
+
+[[redirects]]
+  from = "/areas-of-practice/benzene-law/"
+  to = "/benzene-law/"
+  status = 301
+
+[[redirects]]
+  from = "/areas-of-practice/family-exposure-law/"
+  to = "/family-exposure-law/"
+  status = 301
+
+[[redirects]]
+  from = "/areas-of-practice/lung-cancer/"
+  to = "/lung-cancer/"
+  status = 301
+
+[[redirects]]
+  from = "/areas-of-practice/mesothelioma/"
+  to = "/mesothelioma/"
+  status = 301
+
+[[redirects]]
+  from = "/areas-of-practice/toxic-chemical/"
+  to = "/toxic-chemical/"
+  status = 301
+
+[[redirects]]
+  from = "/asbestos-info/asbestos-exposure-louisiana/"
+  to = "/asbestos-exposure-louisiana/"
+  status = 301
+
+[[redirects]]
+  from = "/asbestos-info/diagnosing-meso/"
+  to = "/diagnosing-meso/"
+  status = 301
+
+[[redirects]]
+  from = "/asbestos-info/meso-general-info/"
+  to = "/meso-general-info/"
+  status = 301
+
+[[redirects]]
+  from = "/asbestos-info/mesothelioma-lawsuit-faqs/"
+  to = "/mesothelioma-lawsuit-faqs/"
+  status = 301
+
+[[redirects]]
+  from = "/asbestos-info/mesothelioma-treatment/"
+  to = "/mesothelioma-treatment/"
+  status = 301
+
+[[redirects]]
+  from = "/asbestos-info/mesothelioma-types/"
+  to = "/mesothelioma-types/"
+  status = 301
+
+[[redirects]]
+  from = "/asbestos-info/mesothelioma-types/benign-mesothelioma/"
+  to = "/mesothelioma-types/benign-mesothelioma/"
+  status = 301
+
+[[redirects]]
+  from = "/asbestos-info/mesothelioma-types/louisiana-shipyard-asbestos-exposure/"
+  to = "/mesothelioma-types/louisiana-shipyard-asbestos-exposure/"
+  status = 301
+
+[[redirects]]
+  from = "/asbestos-info/mesothelioma-types/malignant-mesothelioma/"
+  to = "/mesothelioma-types/malignant-mesothelioma/"
+  status = 301
+
+[[redirects]]
+  from = "/asbestos-info/mesothelioma-types/pericardial-mesothelioma/"
+  to = "/mesothelioma-types/pericardial-mesothelioma/"
+  status = 301
+
+[[redirects]]
+  from = "/asbestos-info/mesothelioma-types/peritoneal-mesothelioma/"
+  to = "/mesothelioma-types/peritoneal-mesothelioma/"
+  status = 301
+
+[[redirects]]
+  from = "/asbestos-info/mesothelioma-types/pleural-mesothelioma/"
+  to = "/mesothelioma-types/pleural-mesothelioma/"
+  status = 301
+
+[[redirects]]
+  from = "/asbestos-info/mesothelioma-types/testicular-mesothelioma/"
+  to = "/mesothelioma-types/testicular-mesothelioma/"
+  status = 301
+
+[[redirects]]
+  from = "/asbestos-info/secondary-exposure/"
+  to = "/secondary-exposure/"
+  status = 301
+
+[[redirects]]
+  from = "/asbestos-info/symptoms-and-effects/"
+  to = "/symptoms-and-effects/"
+  status = 301
+
+[[redirects]]
+  from = "/expertise/family-exposure-law/"
+  to = "/family-exposure-law/"
+  status = 301
+
+[[redirects]]
+  from = "/expertise/lung-cancer/"
+  to = "/lung-cancer/"
+  status = 301
+
+[[redirects]]
+  from = "/expertise/toxic-chemical/"
+  to = "/toxic-chemical/"
+  status = 301
+
+[[redirects]]
+  from = "/expertise/*"
+  to = "/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/areas-of-practice/*"
+  to = "/:splat"
+  status = 301
+
+# Date archives
+[[redirects]]
+  from = "/2013/*"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/2014/*"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/2015/*"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/2016/*"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/2017/*"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/2018/*"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/2019/*"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/2020/*"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/2021/*"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/2022/*"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/2023/*"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/2024/*"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/2025/*"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/2026/*"
+  to = "/blog/"
+  status = 301
+
+# ---------------------------------------------------------------
+# Headers
+# ---------------------------------------------------------------
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "SAMEORIGIN"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/files/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"

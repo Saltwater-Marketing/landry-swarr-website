@@ -1,0 +1,78 @@
+---
+layout: base.njk
+bodyClass: interior
+---
+<section class="phero{% if heroImage %} phero--image{% endif %}">
+  {% if heroImage %}<img class="phero__img" src="{{ heroImage }}" alt="" fetchpriority="high" width="1400" height="700">{% endif %}
+  <div class="wrap phero__in">
+    {% include "crumbs.njk" %}
+    <h1>{{ heading }}</h1>
+    {% if subheading %}<p class="phero__sub">{{ subheading }}</p>{% endif %}
+    <div class="phero__ctas">
+      <a class="btn btn--accent" href="#case-review">Free case review</a>
+      <a class="btn btn--ghost" href="{{ site.phoneHref }}">Call {{ site.phone }}</a>
+    </div>
+  </div>
+</section>
+
+{% set sec = nav.sections[section] %}
+<div class="wrap layout{% if sidebar === false %} layout--single{% endif %}">
+  <article class="prose">
+    {{ content | safe }}
+    {% if sidebar !== false %}
+    <aside class="inline-cta">
+      <div>
+        <h2>Questions about your diagnosis or exposure?</h2>
+        <p>Our attorneys have focused on asbestos and toxic exposure cases in Louisiana since {{ site.since }}. Talk with us about your situation — the consultation is free.</p>
+      </div>
+      <div class="inline-cta__btns">
+        <a class="btn btn--accent" href="#case-review">Start a free case review</a>
+        <a class="btn btn--line" href="{{ site.phoneHref }}">{{ site.phone }}</a>
+      </div>
+    </aside>
+    {% endif %}
+  </article>
+
+  {% if sidebar !== false %}
+  <aside class="sidebar" aria-label="Page tools">
+    <div class="sidebar__sticky">
+      <div class="side-card side-card--cta">
+        <p class="eyebrow eyebrow--light">Free case review</p>
+        <p class="side-card__h">Speak with a Louisiana toxic exposure attorney</p>
+        <a class="btn btn--accent btn--block" href="{{ site.phoneHref }}">Call {{ site.phone }}</a>
+        <a class="btn btn--ghost btn--block" href="#case-review">Send us a message</a>
+      </div>
+      {% if toc and toc.length %}
+      <nav class="side-card toc" aria-label="On this page">
+        <p class="side-card__label">On this page</p>
+        <ol>{% for t in toc %}<li><a href="#{{ t.id }}">{{ t.text }}</a></li>{% endfor %}</ol>
+      </nav>
+      {% endif %}
+      {% if sec %}
+      <nav class="side-card side-links" aria-label="{{ sec.title }}">
+        <p class="side-card__label">{{ sec.title }}</p>
+        <ul>{% for l in sec.links %}<li><a href="{{ l[1] }}"{% if l[1] == page.url %} aria-current="page"{% endif %}>{{ l[0] }}</a></li>{% endfor %}</ul>
+      </nav>
+      {% endif %}
+    </div>
+  </aside>
+  {% endif %}
+</div>
+
+{% if sidebar !== false %}
+{% set rel = collections.posts | taggedPosts(postTag) | limit(3) %}
+{% if rel.length %}
+<section class="band band--sand">
+  <div class="wrap">
+    <div class="band__head">
+      <h2>Related articles</h2>
+      <a class="link-arrow" href="/blog/">All articles</a>
+    </div>
+    <div class="cards cards--3">
+      {% for p in rel %}{% include "post-card.njk" %}{% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+{% include "case-review.njk" %}
+{% endif %}

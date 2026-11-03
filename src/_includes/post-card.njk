@@ -1,0 +1,7 @@
+<a class="pcard" href="{{ p.url }}">
+  {% if p.data.image %}<img class="pcard__img" src="{{ p.data.image }}" alt="" loading="lazy" decoding="async" width="600" height="400">{% else %}<span class="pcard__img pcard__img--blank" aria-hidden="true">L&amp;S</span>{% endif %}
+  <span class="pcard__body">
+    <span class="pcard__meta">{{ p.date | readableDate }}</span>
+    <span class="pcard__title">{{ p.data.heading }}</span>
+  </span>
+</a>

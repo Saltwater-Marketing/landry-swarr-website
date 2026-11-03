@@ -1,0 +1,417 @@
+{
+  "main": [
+    {
+      "label": "Practice Areas",
+      "url": "/areas-of-practice/",
+      "children": [
+        {
+          "label": "Mesothelioma",
+          "url": "/mesothelioma/",
+          "note": "Our primary practice since 1999"
+        },
+        {
+          "label": "Talcum Powder & Mesothelioma",
+          "url": "/talcum-powder-mesothelioma-lawyers/",
+          "note": "Baby powder & cosmetic talc"
+        },
+        {
+          "label": "Benzene Exposure",
+          "url": "/benzene-law/",
+          "note": "AML, MDS, leukemia & lymphoma"
+        },
+        {
+          "label": "Asbestos Exposure",
+          "url": "/asbestos-lawyer/",
+          "note": "Shipyards, refineries & plants"
+        },
+        {
+          "label": "Asbestos Lung Cancer",
+          "url": "/lung-cancer/"
+        },
+        {
+          "label": "Family & Secondary Exposure",
+          "url": "/family-exposure-law/"
+        },
+        {
+          "label": "Toxic Chemical Exposure",
+          "url": "/toxic-chemical/"
+        },
+        {
+          "label": "Genetics & Cancer Causation",
+          "url": "/genetics-cancer-causation/"
+        }
+      ]
+    },
+    {
+      "label": "Resources",
+      "url": "/more-information/",
+      "children": [
+        {
+          "label": "Mesothelioma Overview",
+          "url": "/meso-general-info/"
+        },
+        {
+          "label": "Types of Mesothelioma",
+          "url": "/mesothelioma-types/"
+        },
+        {
+          "label": "Symptoms & Effects",
+          "url": "/symptoms-and-effects/"
+        },
+        {
+          "label": "Diagnosing Mesothelioma",
+          "url": "/diagnosing-meso/"
+        },
+        {
+          "label": "Treatment Options",
+          "url": "/mesothelioma-treatment/"
+        },
+        {
+          "label": "Signs of Benzene Exposure",
+          "url": "/signs-of-benzene-exposure/"
+        },
+        {
+          "label": "Asbestos Exposure in Louisiana",
+          "url": "/asbestos-exposure-louisiana/"
+        },
+        {
+          "label": "Asbestos Info Library",
+          "url": "/asbestos-info/"
+        },
+        {
+          "label": "Mesothelioma Lawsuit FAQs",
+          "url": "/mesothelioma-lawsuit-faqs/"
+        },
+        {
+          "label": "Blog & News",
+          "url": "/blog/"
+        }
+      ]
+    },
+    {
+      "label": "Results",
+      "url": "/verdicts/",
+      "children": [
+        {
+          "label": "Verdicts & Settlements",
+          "url": "/verdicts/"
+        },
+        {
+          "label": "Reported Case Decisions",
+          "url": "/case-decisions/"
+        },
+        {
+          "label": "Testimonials",
+          "url": "/testimonials/"
+        }
+      ]
+    },
+    {
+      "label": "Our Firm",
+      "url": "/our-firm/",
+      "children": [
+        {
+          "label": "About the Firm",
+          "url": "/our-firm/"
+        },
+        {
+          "label": "Our Attorneys",
+          "url": "/our-firm/resumes/"
+        },
+        {
+          "label": "Experience",
+          "url": "/our-firm/experience/"
+        },
+        {
+          "label": "Counsel of Record",
+          "url": "/counsel-of-record/"
+        },
+        {
+          "label": "Attorney Referrals",
+          "url": "/mesothelioma-attorney-referrals/"
+        }
+      ]
+    },
+    {
+      "label": "Contact",
+      "url": "/contact-us/"
+    }
+  ],
+  "sections": {
+    "practice": {
+      "title": "Practice Areas",
+      "links": [
+        [
+          "Mesothelioma",
+          "/mesothelioma/"
+        ],
+        [
+          "Talcum Powder & Mesothelioma",
+          "/talcum-powder-mesothelioma-lawyers/"
+        ],
+        [
+          "Benzene Exposure",
+          "/benzene-law/"
+        ],
+        [
+          "Asbestos Exposure",
+          "/asbestos-lawyer/"
+        ],
+        [
+          "Asbestos Lung Cancer",
+          "/lung-cancer/"
+        ],
+        [
+          "Family & Secondary Exposure",
+          "/family-exposure-law/"
+        ],
+        [
+          "Toxic Chemical Exposure",
+          "/toxic-chemical/"
+        ],
+        [
+          "Genetics & Cancer Causation",
+          "/genetics-cancer-causation/"
+        ],
+        [
+          "Mesothelioma Lawsuit FAQs",
+          "/mesothelioma-lawsuit-faqs/"
+        ]
+      ]
+    },
+    "meso": {
+      "title": "Mesothelioma Guide",
+      "links": [
+        [
+          "Mesothelioma Overview",
+          "/meso-general-info/"
+        ],
+        [
+          "Types of Mesothelioma",
+          "/mesothelioma-types/"
+        ],
+        [
+          "Pleural Mesothelioma",
+          "/mesothelioma-types/pleural-mesothelioma/"
+        ],
+        [
+          "Peritoneal Mesothelioma",
+          "/mesothelioma-types/peritoneal-mesothelioma/"
+        ],
+        [
+          "Pericardial Mesothelioma",
+          "/mesothelioma-types/pericardial-mesothelioma/"
+        ],
+        [
+          "Symptoms & Effects",
+          "/symptoms-and-effects/"
+        ],
+        [
+          "Diagnosing Mesothelioma",
+          "/diagnosing-meso/"
+        ],
+        [
+          "Treatment Options",
+          "/mesothelioma-treatment/"
+        ],
+        [
+          "Life Expectancy",
+          "/asbestos-info/mesothelioma-life-expectancy/"
+        ],
+        [
+          "Mesothelioma Doctors",
+          "/asbestos-info/mesothelioma-doctors/"
+        ],
+        [
+          "Mesothelioma Lawsuits",
+          "/mesothelioma/"
+        ]
+      ]
+    },
+    "asbestos": {
+      "title": "Asbestos in Louisiana",
+      "links": [
+        [
+          "Asbestos Exposure in Louisiana",
+          "/asbestos-exposure-louisiana/"
+        ],
+        [
+          "Louisiana Asbestos Jobsites",
+          "/asbestos-info/louisiana-asbestos-jobsites/"
+        ],
+        [
+          "Shipyard Exposure",
+          "/mesothelioma-types/louisiana-shipyard-asbestos-exposure/"
+        ],
+        [
+          "Oil Refinery Exposure",
+          "/asbestos-info/louisiana-oil-refinery-asbestos-exposure/"
+        ],
+        [
+          "Chemical Plant Exposure",
+          "/asbestos-info/asbestos-exposure-at-chemical-plants-in-louisiana/"
+        ],
+        [
+          "Secondary Exposure",
+          "/secondary-exposure/"
+        ],
+        [
+          "Asbestos Settlements",
+          "/asbestos-info/asbestos-settlements/"
+        ],
+        [
+          "Asbestos Info Library",
+          "/asbestos-info/"
+        ],
+        [
+          "Talcum Powder & Asbestos",
+          "/talcum-powder-mesothelioma-lawyers/"
+        ],
+        [
+          "Asbestos Lawyers",
+          "/asbestos-lawyer/"
+        ]
+      ]
+    },
+    "benzene": {
+      "title": "Benzene Exposure",
+      "links": [
+        [
+          "Benzene Lawyers",
+          "/benzene-law/"
+        ],
+        [
+          "Signs of Benzene Exposure",
+          "/signs-of-benzene-exposure/"
+        ],
+        [
+          "Health Effects of Benzene",
+          "/asbestos-info/health-effects-of-benzene-exposure/"
+        ],
+        [
+          "Diseases Linked to Benzene",
+          "/asbestos-info/diseases-related-to-benzene-exposure/"
+        ],
+        [
+          "Benzene & Leukemia",
+          "/asbestos-info/the-link-between-benzene-and-leukemia/"
+        ],
+        [
+          "Benzene in Louisiana",
+          "/benzene-exposure-in-louisiana/"
+        ],
+        [
+          "Benzene in the Workplace",
+          "/benzene-exposure-in-louisiana-workplaces-the-hidden-hazard/"
+        ],
+        [
+          "Toxic Chemical Exposure",
+          "/toxic-chemical/"
+        ]
+      ]
+    },
+    "results": {
+      "title": "Results",
+      "links": [
+        [
+          "Verdicts & Settlements",
+          "/verdicts/"
+        ],
+        [
+          "$10M Roy v. Johnson & Johnson",
+          "/verdicts/10m-louisiana-mesothelioma-verdict-roy-v-johnson-johnson/"
+        ],
+        [
+          "Reported Case Decisions",
+          "/case-decisions/"
+        ],
+        [
+          "Testimonials",
+          "/testimonials/"
+        ]
+      ]
+    },
+    "firm": {
+      "title": "Our Firm",
+      "links": [
+        [
+          "About the Firm",
+          "/our-firm/"
+        ],
+        [
+          "Our Attorneys",
+          "/our-firm/resumes/"
+        ],
+        [
+          "Experience",
+          "/our-firm/experience/"
+        ],
+        [
+          "Counsel of Record",
+          "/counsel-of-record/"
+        ],
+        [
+          "Attorney Referrals",
+          "/mesothelioma-attorney-referrals/"
+        ],
+        [
+          "Contact Us",
+          "/contact-us/"
+        ]
+      ]
+    },
+    "talc": {
+      "title": "Talcum Powder & Asbestos",
+      "links": [
+        [
+          "Talc & Mesothelioma Lawyers",
+          "/talcum-powder-mesothelioma-lawyers/"
+        ],
+        [
+          "$10M Roy v. Johnson & Johnson",
+          "/verdicts/10m-louisiana-mesothelioma-verdict-roy-v-johnson-johnson/"
+        ],
+        [
+          "Can Talc Lead to a Meso Lawsuit?",
+          "/talcum-powder-mesothelioma-lawsuit-louisiana/"
+        ],
+        [
+          "Talc & Mesothelioma: What Families Should Know",
+          "/talcum-powder-mesothelioma-louisiana/"
+        ],
+        [
+          "Understanding the Roy Case",
+          "/roy-v-johnson-johnson-talc-verdict/"
+        ],
+        [
+          "$1.5B J&J Talc Verdict",
+          "/1-5-billion-johnson-johnson-talc-verdict-highlights-ongoing-asbestos-risks/"
+        ],
+        [
+          "Asbestos in Children's Makeup",
+          "/congresswoman-horrified-to-discover-asbestos-in-makeup-sold-by-2-popular-childrens-retailers/"
+        ],
+        [
+          "Mesothelioma Lawyers",
+          "/mesothelioma/"
+        ]
+      ]
+    }
+  },
+  "categories": {
+    "mesothelioma": "Mesothelioma",
+    "asbestos": "Asbestos",
+    "benzene": "Benzene",
+    "talc": "Talcum Powder",
+    "genetics": "Genetics & Causation",
+    "louisiana": "Louisiana",
+    "verdicts": "Verdicts",
+    "settlements": "Settlements",
+    "lung-cancer": "Lung Cancer",
+    "tips": "Tips",
+    "chrysotile": "Chrysotile",
+    "shaker-cases": "Shaker Cases",
+    "event": "Events",
+    "uncategorized": "News"
+  }
+}

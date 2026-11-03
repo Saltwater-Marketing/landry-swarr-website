@@ -1,0 +1,54 @@
+{
+  "name": "Landry & Swarr",
+  "legalName": "Landry & Swarr, LLC",
+  "tagline": "Louisiana Mesothelioma & Toxic Exposure Lawyers",
+  "url": "https://www.landryswarr.com",
+  "phone": "(504) 299-1214",
+  "phoneHref": "tel:+15042991214",
+  "fax": "(504) 299-1215",
+  "email": "lslaw@landryswarr.com",
+  "address": {
+    "street": "1100 Poydras St., Energy Centre – Suite 2000",
+    "city": "New Orleans",
+    "region": "LA",
+    "zip": "70163"
+  },
+  "geo": {
+    "lat": 29.9499496,
+    "lng": -90.0754834
+  },
+  "mapsUrl": "https://maps.app.goo.gl/?q=Landry+%26+Swarr+LLC+1100+Poydras+St+New+Orleans",
+  "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3457.025343779308!2d-90.077672084505!3d29.9499496299846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8620a60a60326f37%3A0xb4707f40aa1aab3a!2sLandry%20%26%20Swarr%2C%20LLC!5e0!3m2!1sen!2sus!4v1574769281613!5m2!1sen!2sus",
+  "facebook": "https://www.facebook.com/landryswarr",
+  "since": 1999,
+  "tracking": {
+    "gtm": "GTM-N86LQCR6",
+    "metaPixel": "439559649773947"
+  },
+  "ghl": {
+    "formId": "DuuNLnWzp8ruxJh1uQYN",
+    "formName": "L&S Website Contact Form",
+    "formHeight": 888
+  },
+  "cities": [
+    "New Orleans",
+    "Baton Rouge",
+    "Lafayette",
+    "Lake Charles",
+    "Shreveport",
+    "Covington",
+    "Houma",
+    "Alexandria",
+    "Avondale",
+    "Mandeville",
+    "Monroe",
+    "Morgan City",
+    "Plaquemine",
+    "Slidell",
+    "Chalmette",
+    "Kenner",
+    "Metairie",
+    "Bogalusa"
+  ],
+  "responsibleAttorney": "Mickey P. Landry"
+}

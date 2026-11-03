@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ title }}</title>
+{% if description %}<meta name="description" content="{{ description }}">{% endif %}
+{% set canonical = (canonicalOverride or page.url) | absUrl(site.url) %}
+<link rel="canonical" href="{{ canonical }}">
+{% if noindex %}<meta name="robots" content="noindex, follow">{% else %}<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">{% endif %}
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="{{ site.name }}">
+<meta property="og:type" content="{{ 'article' if layout == 'post.njk' else 'website' }}">
+<meta property="og:title" content="{{ title }}">
+{% if description %}<meta property="og:description" content="{{ description }}">{% endif %}
+<meta property="og:url" content="{{ canonical }}">
+{% set ogImage = image or '/images/og-default.jpg' %}
+<meta property="og:image" content="{{ ogImage | absUrl(site.url) }}">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/images/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/site.css?v={{ build.v }}">
+{% if heroImage %}<link rel="preload" as="image" href="{{ heroImage }}" fetchpriority="high">{% endif %}
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','{{ site.tracking.gtm }}');</script>
+<!-- Meta Pixel -->
+<script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','{{ site.tracking.metaPixel }}');fbq('track','PageView');</script>
+
+{% include "schema.njk" %}
+</head>
+<body class="{{ bodyClass }}">
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ site.tracking.gtm }}" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id={{ site.tracking.metaPixel }}&ev=PageView&noscript=1"></noscript>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="topbar">
+  <div class="wrap topbar__in">
+    <span>Serving families across Louisiana since {{ site.since }} &middot; <span lang="es">Se Habla Español</span></span>
+    <span class="topbar__right">Free, confidential case review &middot; <a href="{{ site.phoneHref }}"><strong>{{ site.phone }}</strong></a></span>
+  </div>
+</div>
+
+<header class="header" id="top">
+  <div class="wrap header__in">
+    <a class="brand" href="/" aria-label="{{ site.name }} home">
+      <span class="brand__name">Landry <span>&amp;</span> Swarr</span>
+      <span class="brand__tag">Louisiana Mesothelioma &amp; Toxic Exposure Lawyers</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+        <span class="nav__bars" aria-hidden="true"></span><span class="nav__toggle-label">Menu</span>
+      </button>
+      <ul class="nav__menu" id="nav-menu">
+        {% for item in nav.main %}
+        {% set active = (page.url == item.url) or (item.children and (item.children | byUrls([page.url]) | length)) %}
+        <li class="nav__item{% if item.children %} has-sub{% endif %}{% if active %} is-active{% endif %}">
+          {% if item.children %}
+          <button class="nav__link nav__sub-toggle" type="button" aria-expanded="false">{{ item.label }}<svg aria-hidden="true" width="10" height="10" viewBox="0 0 10 10"><path d="M1 3l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
+          <div class="nav__panel">
+            <ul>
+              {% for c in item.children %}
+              <li><a href="{{ c.url }}"{% if page.url == c.url %} aria-current="page"{% endif %}><span>{{ c.label }}</span>{% if c.note %}<small>{{ c.note }}</small>{% endif %}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
+          {% else %}
+          <a class="nav__link" href="{{ item.url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a>
+          {% endif %}
+        </li>
+        {% endfor %}
+        <li class="nav__cta"><a class="btn btn--accent" href="{{ site.phoneHref }}">Call {{ site.phone }}</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+{{ content | safe }}
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__grid">
+    <div class="footer__brand">
+      <a class="brand brand--footer" href="/"><span class="brand__name">Landry <span>&amp;</span> Swarr</span></a>
+      <p>Landry &amp; Swarr is a New Orleans law firm representing people across Louisiana harmed by asbestos, talc, benzene and other toxic exposures, including mesothelioma, asbestos lung cancer, leukemia and related diseases.</p>
+      <address>
+        {{ site.address.street }}<br>{{ site.address.city }}, {{ site.address.region }} {{ site.address.zip }}<br>
+        Phone: <a href="{{ site.phoneHref }}">{{ site.phone }}</a><br>
+        Fax: {{ site.fax }}<br>
+        <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+      </address>
+    </div>
+    <div>
+      <h2 class="footer__h">Practice Areas</h2>
+      <ul>{% for l in nav.sections.practice.links | limit(8) %}<li><a href="{{ l[1] }}">{{ l[0] }}</a></li>{% endfor %}</ul>
+    </div>
+    <div>
+      <h2 class="footer__h">Resources</h2>
+      <ul>
+        <li><a href="/meso-general-info/">Mesothelioma Overview</a></li>
+        <li><a href="/mesothelioma-types/">Types of Mesothelioma</a></li>
+        <li><a href="/symptoms-and-effects/">Symptoms &amp; Effects</a></li>
+        <li><a href="/mesothelioma-treatment/">Treatment Options</a></li>
+        <li><a href="/signs-of-benzene-exposure/">Signs of Benzene Exposure</a></li>
+        <li><a href="/asbestos-info/">Asbestos Info Library</a></li>
+        <li><a href="/mesothelioma-lawsuit-faqs/">Lawsuit FAQs</a></li>
+        <li><a href="/blog/">Blog &amp; News</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="footer__h">Our Firm</h2>
+      <ul>
+        <li><a href="/our-firm/">About the Firm</a></li>
+        <li><a href="/our-firm/resumes/">Our Attorneys</a></li>
+        <li><a href="/verdicts/">Verdicts</a></li>
+        <li><a href="/case-decisions/">Case Decisions</a></li>
+        <li><a href="/testimonials/">Testimonials</a></li>
+        <li><a href="/mesothelioma-attorney-referrals/">Attorney Referrals</a></li>
+        <li><a href="/contact-us/">Contact Us</a></li>
+        <li><a href="{{ site.facebook }}" target="_blank" rel="noopener">Facebook</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer__legal">
+    <p>Attorney advertising. The information on this website is for general information only and is not legal or medical advice. Contacting us does not create an attorney-client relationship. Past results do not guarantee a similar outcome. {{ site.responsibleAttorney }} is responsible for the content of this website.</p>
+    <p>&copy; {{ build.year }} {{ site.legalName }}. All rights reserved. &middot; <a href="/disclaimer/">Disclaimer</a> &middot; <a href="/privacy-policy/">Privacy Policy</a> &middot; <a href="/terms-conditions/">Terms &amp; Conditions</a> &middot; <a href="/sitemap.xml">Sitemap</a></p>
+  </div>
+</footer>
+
+<a class="callbar" href="{{ site.phoneHref }}"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11.4 11.4 0 003.6.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.6a1 1 0 01-.25 1l-2.2 2.2z"/></svg> Call for a free case review</a>
+<script src="/assets/js/site.js?v={{ build.v }}" defer></script>
+</body>
+</html>

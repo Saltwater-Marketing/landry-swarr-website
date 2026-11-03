@@ -1,0 +1,46 @@
+{% set org = {
+  "@type": ["LegalService", "LocalBusiness"],
+  "@id": site.url + "/#firm",
+  "name": site.legalName,
+  "alternateName": site.name,
+  "url": site.url + "/",
+  "telephone": "+1-504-299-1214",
+  "faxNumber": "+1-504-299-1215",
+  "email": site.email,
+  "image": site.url + "/images/og-default.jpg",
+  "logo": site.url + "/images/favicon.png",
+  "priceRange": "Free consultation",
+  "foundingDate": "1999",
+  "address": { "@type": "PostalAddress", "streetAddress": "1100 Poydras St., Suite 2000", "addressLocality": "New Orleans", "addressRegion": "LA", "postalCode": "70163", "addressCountry": "US" },
+  "geo": { "@type": "GeoCoordinates", "latitude": site.geo.lat, "longitude": site.geo.lng },
+  "areaServed": { "@type": "State", "name": "Louisiana" },
+  "knowsAbout": ["Mesothelioma", "Asbestos exposure", "Talcum powder asbestos contamination", "Benzene exposure", "Acute myeloid leukemia", "Myelodysplastic syndromes", "Asbestos-related lung cancer", "Secondary asbestos exposure"],
+  "knowsLanguage": ["en", "es"],
+  "sameAs": [site.facebook]
+} %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {{ org | json | safe }},
+    { "@type": "WebSite", "@id": "{{ site.url }}/#website", "url": "{{ site.url }}/", "name": "{{ site.name }}", "publisher": { "@id": "{{ site.url }}/#firm" } }
+    {% if page.url != "/" and breadcrumbs %},
+    { "@type": "BreadcrumbList", "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ site.url }}/" }
+      {% for b in breadcrumbs %},{ "@type": "ListItem", "position": {{ loop.index + 1 }}, "name": {{ b[0] | json | safe }}, "item": "{{ b[1] | absUrl(site.url) }}" }{% endfor %}
+    ] }
+    {% endif %}
+    {% if layout == "post.njk" %},
+    { "@type": "BlogPosting", "headline": {{ heading | json | safe }}, "description": {{ description | json | safe }},
+      "datePublished": "{{ page.date | isoDate }}", "dateModified": "{{ (modified or page.date) | isoDate }}",
+      {% if image %}"image": "{{ image | absUrl(site.url) }}",{% endif %}
+      "mainEntityOfPage": "{{ page.url | absUrl(site.url) }}",
+      "author": { "@type": "Organization", "@id": "{{ site.url }}/#firm", "name": "{{ site.legalName }}" },
+      "publisher": { "@id": "{{ site.url }}/#firm" } }
+    {% endif %}
+    {% if faqSchema %},
+    { "@type": "FAQPage", "mainEntity": {{ faqSchema | json | safe }} }
+    {% endif %}
+  ]
+}
+</script>

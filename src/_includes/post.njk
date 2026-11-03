@@ -1,0 +1,55 @@
+---
+layout: base.njk
+bodyClass: interior post-page
+---
+{% set cats = tags | reject("equalto", "post") %}
+<section class="phero phero--post">
+  <div class="wrap phero__in phero__in--narrow">
+    {% include "crumbs.njk" %}
+    <p class="phero__meta">
+      {% for c in cats %}{% if nav.categories[c] %}<a class="chip" href="/category/{{ c }}/">{{ nav.categories[c] }}</a>{% endif %}{% endfor %}
+      <time datetime="{{ page.date | isoDate }}">{{ page.date | readableDate }}</time>
+    </p>
+    <h1>{{ heading }}</h1>
+  </div>
+</section>
+
+<div class="wrap layout">
+  <article class="prose">
+    {% if image %}<img class="post-feature" src="{{ image }}" alt="" width="1200" height="800" fetchpriority="high">{% endif %}
+    {{ content | safe }}
+    <div class="author-box">
+      <img src="/images/uploads/2022/03/team-2022-2.webp" alt="Attorneys of Landry & Swarr" width="160" height="107" loading="lazy">
+      <div>
+        <p class="author-box__name">Landry &amp; Swarr, LLC</p>
+        <p>New Orleans attorneys focused on mesothelioma, asbestos, talc and benzene exposure cases for Louisiana families since {{ site.since }}. This article is for general information and is not legal or medical advice.</p>
+        <p><a href="/our-firm/resumes/">Meet our attorneys</a> &middot; <a href="#case-review">Ask us a question</a></p>
+      </div>
+    </div>
+  </article>
+  <aside class="sidebar" aria-label="Page tools">
+    <div class="sidebar__sticky">
+      <div class="side-card side-card--cta">
+        <p class="eyebrow eyebrow--light">Free case review</p>
+        <p class="side-card__h">Diagnosed after asbestos, talc or benzene exposure?</p>
+        <a class="btn btn--accent btn--block" href="{{ site.phoneHref }}">Call {{ site.phone }}</a>
+        <a class="btn btn--ghost btn--block" href="#case-review">Send us a message</a>
+      </div>
+      <nav class="side-card side-links" aria-label="Practice areas">
+        <p class="side-card__label">How we can help</p>
+        <ul>{% for l in nav.sections.practice.links %}<li><a href="{{ l[1] }}">{{ l[0] }}</a></li>{% endfor %}</ul>
+      </nav>
+    </div>
+  </aside>
+</div>
+
+{% set rel = collections.posts | relatedPosts(tags, page.url, 3) %}
+{% if rel.length %}
+<section class="band band--sand">
+  <div class="wrap">
+    <div class="band__head"><h2>Keep reading</h2><a class="link-arrow" href="/blog/">All articles</a></div>
+    <div class="cards cards--3">{% for p in rel %}{% include "post-card.njk" %}{% endfor %}</div>
+  </div>
+</section>
+{% endif %}
+{% include "case-review.njk" %}
