@@ -468,3 +468,10 @@ address { font-style: normal; }
 .attorney__bio ul { overflow: hidden; }
 @media (max-width: 640px) { .attorney__photo { float: none; width: 200px; margin: 0 0 16px; } }
 .footer__credit { float: right; } @media (max-width: 700px) { .footer__credit { float: none; display: block; margin-top: 8px; } }
+/* Compact interior page header */
+.phero { padding: 26px 0 30px; }
+.phero h1, .phero__in--narrow h1 { font-size: clamp(1.75rem, 3vw, 2.4rem); max-width: 40ch; margin-bottom: .2em; }
+.phero__sub { font-size: 1.05rem; }
+.crumbs ol { margin-bottom: 10px; }
+.layout { padding-top: 40px; }
+@media (max-width: 640px) { .phero { padding: 20px 0 24px; } .layout { padding-top: 28px; } }
