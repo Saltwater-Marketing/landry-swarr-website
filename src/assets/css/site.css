@@ -685,3 +685,7 @@ body { padding-bottom: 0 !important; }
 .dated-note { background: var(--sand); border-left: 4px solid var(--navy); border-radius: 4px; padding: 14px 18px; font-size: .95rem !important; margin-bottom: 1.6em; }
 /* Phones: hide breadcrumb trail (still in page markup for Google) */
 @media (max-width: 640px) { .crumbs { display: none; } }
+/* Hero photo fade without mask-image (cheaper to paint on phones) */
+.hero__media img { -webkit-mask-image: none !important; mask-image: none !important; }
+.hero__media::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, #f5f8fd 0, rgba(245, 248, 253, 0) 22%); pointer-events: none; }
+@media (max-width: 900px) { .hero__media::after { background: linear-gradient(180deg, rgba(240, 244, 251, 0) 70%, #f0f4fb 100%); } }
