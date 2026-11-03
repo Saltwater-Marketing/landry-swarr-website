@@ -491,3 +491,4 @@ address { font-style: normal; }
 @media (max-width: 1000px) { .areas { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 520px) { .areas { grid-template-columns: 1fr; } }
 .center-cta { text-align: center; margin: 32px 0 0; }
+.prose .link-arrow { white-space: normal; }
