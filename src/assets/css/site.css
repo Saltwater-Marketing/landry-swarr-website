@@ -446,3 +446,4 @@ address { font-style: normal; }
 .case img { width: 100%; height: auto; min-height: 0; aspect-ratio: 16 / 9; object-fit: cover; object-position: center 40%; }
 @media (max-width: 1000px) { .court { grid-template-columns: 1fr 1fr; } .court__intro, .case, .case:nth-of-type(n+4) { grid-column: auto; } .court__intro { grid-column: 1 / -1; } }
 @media (max-width: 620px) { .court { grid-template-columns: 1fr; } }
+.case img { aspect-ratio: 1 / 1; object-position: center; }
