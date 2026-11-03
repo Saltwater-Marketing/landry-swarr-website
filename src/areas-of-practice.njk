@@ -1,0 +1,48 @@
+---
+layout: base.njk
+title: "Practice Areas | Louisiana Mesothelioma & Toxic Exposure Lawyers | Landry & Swarr"
+description: "Landry & Swarr represents Louisiana families in mesothelioma, asbestos, talcum powder, benzene, asbestos lung cancer, secondary exposure and toxic chemical cases."
+heading: "Practice Areas"
+permalink: /areas-of-practice/
+bodyClass: interior
+breadcrumbs: [["Practice Areas", "/areas-of-practice/"]]
+areas:
+  - { title: "Mesothelioma", url: "/mesothelioma/", img: "/images/uploads/2017/10/Mesothelioma.webp", text: "Pleural, peritoneal and pericardial mesothelioma caused by asbestos. Mesothelioma has been the center of our practice since 1999." }
+  - { title: "Talcum Powder & Mesothelioma", url: "/talcum-powder-mesothelioma-lawyers/", img: "/images/uploads/2026/10/tal-powder-scaled.webp", text: "Mesothelioma after years of using baby powder, body powder or talc cosmetics that may have been contaminated with asbestos." }
+  - { title: "Benzene Exposure", url: "/benzene-law/", img: "/images/uploads/2020/08/082620.webp", text: "AML, MDS, leukemia and lymphoma linked to benzene at refineries, chemical plants, in solvents and in recalled consumer products." }
+  - { title: "Genetics & Cancer Causation", url: "/genetics-cancer-causation/", img: "/images/genetics-card.webp", text: "When defendants blame a client's genes instead of their exposure, we have won rulings limiting genetics-based defenses." }
+  - { title: "Asbestos Exposure", url: "/asbestos-lawyer/", img: "/images/uploads/2017/01/feb2018b.webp", text: "Workers exposed to asbestos at Louisiana shipyards, refineries, chemical plants, paper mills and other jobsites." }
+  - { title: "Asbestos Lung Cancer", url: "/lung-cancer/", img: "/images/uploads/2016/05/IMG_1488.webp", text: "Lung cancer linked to asbestos exposure, including cases first misdiagnosed or blamed only on smoking." }
+  - { title: "Family & Secondary Exposure", url: "/family-exposure-law/", img: "/images/uploads/2017/10/family-exposure-img.webp", text: "Spouses and children exposed to asbestos dust carried home on work clothes, hair and vehicles." }
+  - { title: "Toxic Chemical Exposure", url: "/toxic-chemical/", img: "/images/uploads/2022/07/070722.webp", text: "Cancers and illnesses caused by other industrial chemicals and solvents used across Louisiana." }
+---
+<section class="phero">
+  <div class="wrap phero__in">
+    {% include "crumbs.njk" %}
+    <h1>Practice Areas</h1>
+    <p class="phero__sub">Built on mesothelioma and focused on toxic exposure. Choose an area below to learn how we help Louisiana families.</p>
+  </div>
+</section>
+
+<section class="band band--tight">
+  <div class="wrap">
+    <div class="areas">
+      {% for a in areas %}
+      <a class="area" href="{{ a.url }}">
+        <img src="{{ a.img }}" alt="" loading="{{ 'eager' if loop.index <= 4 else 'lazy' }}" width="600" height="375">
+        <span class="area__body">
+          <span class="area__title">{{ a.title }}</span>
+          <span class="area__text">{{ a.text }}</span>
+          <span class="btn btn--line area__btn">Learn more</span>
+        </span>
+      </a>
+      {% endfor %}
+    </div>
+    <div class="areas__note">
+      <h2>Not sure which applies to you?</h2>
+      <p>Many families don't know where an exposure happened, or whether a diagnosis is connected to work, home or a product. You don't need to know before you call. Our attorneys will review your history with you and help identify what may have caused the illness.</p>
+    </div>
+  </div>
+</section>
+
+{% include "case-review.njk" %}

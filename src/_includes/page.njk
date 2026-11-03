@@ -55,20 +55,4 @@ bodyClass: interior
   {% endif %}
 </div>
 
-{% if sidebar !== false and related !== false %}
-{% set rel = collections.posts | taggedPosts(postTag) | limit(3) %}
-{% if rel.length %}
-<section class="band band--sand">
-  <div class="wrap">
-    <div class="band__head">
-      <h2>Related articles</h2>
-      <a class="link-arrow" href="/blog/">All articles</a>
-    </div>
-    <div class="cards cards--3">
-      {% for p in rel %}{% include "post-card.njk" %}{% endfor %}
-    </div>
-  </div>
-</section>
-{% endif %}
-{% endif %}
 {% if not noReview %}{% include "case-review.njk" %}{% endif %}

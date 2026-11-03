@@ -475,3 +475,19 @@ address { font-style: normal; }
 .crumbs ol { margin-bottom: 10px; }
 .layout { padding-top: 40px; }
 @media (max-width: 640px) { .phero { padding: 20px 0 24px; } .layout { padding-top: 28px; } }
+/* Practice areas hub */
+.band--tight { padding: 48px 0 72px; }
+.areas { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; }
+.area { display: flex; flex-direction: column; background: #fff; border: 1px solid var(--line); border-top: 4px solid var(--navy); border-radius: var(--radius); overflow: hidden; text-decoration: none; color: var(--text); transition: transform .15s, box-shadow .15s; }
+.area:hover { transform: translateY(-3px); box-shadow: var(--shadow); border-top-color: var(--copper); color: var(--text); }
+.area img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; }
+.area__body { display: flex; flex-direction: column; gap: 8px; padding: 18px 20px 22px; flex: 1; }
+.area__title { font: 600 1.25rem/1.25 var(--serif); color: var(--navy); }
+.area__text { flex: 1; font-size: .97rem; }
+.area__btn { align-self: flex-start; margin-top: 8px; padding: .6em 1.1em; }
+.area:hover .area__btn { background: var(--navy); color: #fff; }
+.areas__note { max-width: 760px; margin: 56px auto 0; text-align: center; }
+.areas__note h2 { font-size: 1.6rem; }
+@media (max-width: 1000px) { .areas { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 520px) { .areas { grid-template-columns: 1fr; } }
+.center-cta { text-align: center; margin: 32px 0 0; }

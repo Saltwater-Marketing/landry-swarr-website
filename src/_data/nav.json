@@ -5,6 +5,10 @@
       "url": "/areas-of-practice/",
       "children": [
         {
+          "label": "All Practice Areas",
+          "url": "/areas-of-practice/"
+        },
+        {
           "label": "Mesothelioma",
           "url": "/mesothelioma/"
         },
