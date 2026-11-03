@@ -8,10 +8,6 @@ bodyClass: interior
     {% include "crumbs.njk" %}
     <h1>{{ heading }}</h1>
     {% if subheading %}<p class="phero__sub">{{ subheading }}</p>{% endif %}
-    <div class="phero__ctas">
-      <a class="btn btn--accent" href="#case-review">Free case review</a>
-      <a class="btn btn--line" href="{{ site.phoneHref }}">Call {{ site.phone }}</a>
-    </div>
   </div>
 </section>
 
@@ -59,7 +55,7 @@ bodyClass: interior
   {% endif %}
 </div>
 
-{% if sidebar !== false %}
+{% if sidebar !== false and related !== false %}
 {% set rel = collections.posts | taggedPosts(postTag) | limit(3) %}
 {% if rel.length %}
 <section class="band band--sand">
@@ -74,5 +70,5 @@ bodyClass: interior
   </div>
 </section>
 {% endif %}
-{% include "case-review.njk" %}
 {% endif %}
+{% if not noReview %}{% include "case-review.njk" %}{% endif %}
