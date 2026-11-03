@@ -9,22 +9,6 @@
           "url": "/areas-of-practice/"
         },
         {
-          "label": "Mesothelioma",
-          "url": "/mesothelioma/"
-        },
-        {
-          "label": "Talcum Powder & Mesothelioma",
-          "url": "/talcum-powder-mesothelioma-lawyers/"
-        },
-        {
-          "label": "Benzene Exposure",
-          "url": "/benzene-law/"
-        },
-        {
-          "label": "Genetics & Cancer Causation",
-          "url": "/genetics-cancer-causation/"
-        },
-        {
           "label": "Asbestos Exposure",
           "url": "/asbestos-lawyer/"
         },
@@ -33,8 +17,24 @@
           "url": "/lung-cancer/"
         },
         {
+          "label": "Benzene Exposure",
+          "url": "/benzene-law/"
+        },
+        {
           "label": "Family & Secondary Exposure",
           "url": "/family-exposure-law/"
+        },
+        {
+          "label": "Genetics & Cancer Causation",
+          "url": "/genetics-cancer-causation/"
+        },
+        {
+          "label": "Mesothelioma",
+          "url": "/mesothelioma/"
+        },
+        {
+          "label": "Talcum Powder & Mesothelioma",
+          "url": "/talcum-powder-mesothelioma-lawyers/"
         },
         {
           "label": "Toxic Chemical Exposure",
@@ -47,28 +47,8 @@
       "url": "/more-information/",
       "children": [
         {
-          "label": "Mesothelioma Overview",
-          "url": "/meso-general-info/"
-        },
-        {
-          "label": "Types of Mesothelioma",
-          "url": "/mesothelioma-types/"
-        },
-        {
-          "label": "Symptoms & Effects",
-          "url": "/symptoms-and-effects/"
-        },
-        {
-          "label": "Diagnosing Mesothelioma",
-          "url": "/diagnosing-meso/"
-        },
-        {
-          "label": "Treatment Options",
-          "url": "/mesothelioma-treatment/"
-        },
-        {
-          "label": "Signs of Benzene Exposure",
-          "url": "/signs-of-benzene-exposure/"
+          "label": "All Resources",
+          "url": "/more-information/"
         },
         {
           "label": "Asbestos Exposure in Louisiana",
@@ -79,16 +59,40 @@
           "url": "/asbestos-info/"
         },
         {
-          "label": "Mesothelioma Lawsuit FAQs",
-          "url": "/mesothelioma-lawsuit-faqs/"
+          "label": "Blog & News",
+          "url": "/blog/"
+        },
+        {
+          "label": "Diagnosing Mesothelioma",
+          "url": "/diagnosing-meso/"
         },
         {
           "label": "Free Family Exposure Guide",
           "url": "/5-things-everyone-needs-to-know-family-exposure-ebook-download/"
         },
         {
-          "label": "Blog & News",
-          "url": "/blog/"
+          "label": "Mesothelioma Lawsuit FAQs",
+          "url": "/mesothelioma-lawsuit-faqs/"
+        },
+        {
+          "label": "Mesothelioma Overview",
+          "url": "/meso-general-info/"
+        },
+        {
+          "label": "Signs of Benzene Exposure",
+          "url": "/signs-of-benzene-exposure/"
+        },
+        {
+          "label": "Symptoms & Effects",
+          "url": "/symptoms-and-effects/"
+        },
+        {
+          "label": "Treatment Options",
+          "url": "/mesothelioma-treatment/"
+        },
+        {
+          "label": "Types of Mesothelioma",
+          "url": "/mesothelioma-types/"
         }
       ]
     },
@@ -103,10 +107,6 @@
         {
           "label": "Reported Case Decisions",
           "url": "/case-decisions/"
-        },
-        {
-          "label": "Testimonials",
-          "url": "/testimonials/"
         }
       ]
     },
@@ -121,6 +121,10 @@
         {
           "label": "Our Attorneys",
           "url": "/our-firm/resumes/"
+        },
+        {
+          "label": "Testimonials",
+          "url": "/testimonials/"
         },
         {
           "label": "Experience",
@@ -146,22 +150,6 @@
       "title": "Practice Areas",
       "links": [
         [
-          "Mesothelioma",
-          "/mesothelioma/"
-        ],
-        [
-          "Talcum Powder & Mesothelioma",
-          "/talcum-powder-mesothelioma-lawyers/"
-        ],
-        [
-          "Benzene Exposure",
-          "/benzene-law/"
-        ],
-        [
-          "Genetics & Cancer Causation",
-          "/genetics-cancer-causation/"
-        ],
-        [
           "Asbestos Exposure",
           "/asbestos-lawyer/"
         ],
@@ -170,16 +158,32 @@
           "/lung-cancer/"
         ],
         [
+          "Benzene Exposure",
+          "/benzene-law/"
+        ],
+        [
           "Family & Secondary Exposure",
           "/family-exposure-law/"
         ],
         [
-          "Toxic Chemical Exposure",
-          "/toxic-chemical/"
+          "Genetics & Cancer Causation",
+          "/genetics-cancer-causation/"
+        ],
+        [
+          "Mesothelioma",
+          "/mesothelioma/"
         ],
         [
           "Mesothelioma Lawsuit FAQs",
           "/mesothelioma-lawsuit-faqs/"
+        ],
+        [
+          "Talcum Powder & Mesothelioma",
+          "/talcum-powder-mesothelioma-lawyers/"
+        ],
+        [
+          "Toxic Chemical Exposure",
+          "/toxic-chemical/"
         ]
       ]
     },
@@ -316,10 +320,6 @@
         [
           "Reported Case Decisions",
           "/case-decisions/"
-        ],
-        [
-          "Testimonials",
-          "/testimonials/"
         ]
       ]
     },
@@ -333,6 +333,10 @@
         [
           "Our Attorneys",
           "/our-firm/resumes/"
+        ],
+        [
+          "Testimonials",
+          "/testimonials/"
         ],
         [
           "Experience",

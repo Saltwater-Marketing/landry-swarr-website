@@ -1,0 +1,78 @@
+---
+layout: base.njk
+title: "Mesothelioma, Asbestos & Benzene Resources | Landry & Swarr"
+description: "Free resources for Louisiana families: mesothelioma types, symptoms, diagnosis and treatment, asbestos exposure at Louisiana jobsites, benzene health effects, and lawsuit information."
+heading: "Resources"
+permalink: /more-information/
+bodyClass: interior
+breadcrumbs: [["Resources", "/more-information/"]]
+groups:
+  - title: "Mesothelioma"
+    img: "/images/uploads/2023/08/080823a.webp"
+    links:
+      - ["Mesothelioma Overview", "/meso-general-info/"]
+      - ["Types of Mesothelioma", "/mesothelioma-types/"]
+      - ["Pleural Mesothelioma", "/mesothelioma-types/pleural-mesothelioma/"]
+      - ["Pericardial Mesothelioma", "/mesothelioma-types/pericardial-mesothelioma/"]
+      - ["Symptoms & Effects", "/symptoms-and-effects/"]
+      - ["Diagnosing Mesothelioma", "/diagnosing-meso/"]
+      - ["Treatment Options", "/mesothelioma-treatment/"]
+      - ["Mesothelioma Doctors", "/asbestos-info/mesothelioma-doctors/"]
+      - ["Southern Treatment Centers", "/asbestos-info/top-southern-mesothelioma-treatment-centers/"]
+      - ["Research & Clinical Trials", "/asbestos-info/more-research/"]
+  - title: "Asbestos in Louisiana"
+    img: "/images/uploads/2017/01/feb2018b.webp"
+    links:
+      - ["Asbestos Exposure in Louisiana", "/asbestos-exposure-louisiana/"]
+      - ["Louisiana Asbestos Jobsites", "/asbestos-info/louisiana-asbestos-jobsites/"]
+      - ["Shipyard Asbestos Exposure", "/mesothelioma-types/louisiana-shipyard-asbestos-exposure/"]
+      - ["Insulation Plant Workers", "/asbestos-info/louisiana-lnsulation-plant-workers-may-be-at-risk-due-to-asbestos-exposure/"]
+      - ["Automotive Industry Exposure", "/asbestos-info/asbestos-exposure-in-the-louisiana-automotive-industry/"]
+      - ["Secondary Exposure", "/secondary-exposure/"]
+      - ["Link Between Asbestos & Mesothelioma", "/asbestos-info/link-between-asbestos-and-mesothelioma/"]
+      - ["Asbestos Info Library", "/asbestos-info/"]
+  - title: "Benzene & Toxic Chemicals"
+    img: "/images/uploads/2020/08/082620.webp"
+    links:
+      - ["Signs of Benzene Exposure", "/signs-of-benzene-exposure/"]
+      - ["Health Effects of Benzene", "/asbestos-info/health-effects-of-benzene-exposure/"]
+      - ["Diseases Linked to Benzene", "/asbestos-info/diseases-related-to-benzene-exposure/"]
+      - ["Benzene & Leukemia", "/asbestos-info/the-link-between-benzene-and-leukemia/"]
+      - ["Benzene Exposure in Louisiana", "/benzene-exposure-in-louisiana/"]
+      - ["Toxic Chemical Exposure", "/toxic-chemical/"]
+  - title: "Legal Help & Guides"
+    img: "/images/uploads/2023/08/080823c.webp"
+    links:
+      - ["Mesothelioma Lawsuit FAQs", "/mesothelioma-lawsuit-faqs/"]
+      - ["Asbestos Settlements", "/asbestos-info/asbestos-settlements/"]
+      - ["Free Family Exposure Guide", "/5-things-everyone-needs-to-know-family-exposure-ebook-download/"]
+      - ["Reported Case Decisions", "/case-decisions/"]
+      - ["Blog & News", "/blog/"]
+---
+<section class="phero">
+  <div class="wrap phero__in">
+    {% include "crumbs.njk" %}
+    <h1>Resources</h1>
+    <p class="phero__sub">Information for Louisiana patients and families about mesothelioma, asbestos and benzene exposure, and your legal options.</p>
+  </div>
+</section>
+
+<section class="band band--tight">
+  <div class="wrap">
+    <div class="rgroups">
+      {% for g in groups %}
+      <div class="rgroup">
+        <img src="{{ g.img }}" alt="" loading="{{ 'eager' if loop.index <= 2 else 'lazy' }}" width="600" height="300">
+        <div class="rgroup__body">
+          <h2>{{ g.title }}</h2>
+          <ul class="linkgrid linkgrid--1">
+            {% for l in g.links %}<li><a href="{{ l[1] }}">{{ l[0] }}</a></li>{% endfor %}
+          </ul>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% include "case-review.njk" %}

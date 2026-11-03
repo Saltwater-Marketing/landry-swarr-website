@@ -492,3 +492,14 @@ address { font-style: normal; }
 @media (max-width: 520px) { .areas { grid-template-columns: 1fr; } }
 .center-cta { text-align: center; margin: 32px 0 0; }
 .prose .link-arrow { white-space: normal; }
+/* Resources hub */
+.rgroups { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; align-items: start; }
+.rgroup { background: #fff; border: 1px solid var(--line); border-top: 4px solid var(--navy); border-radius: var(--radius); overflow: hidden; }
+.rgroup img { width: 100%; aspect-ratio: 3 / 1; object-fit: cover; }
+.rgroup__body { padding: 22px 24px 26px; }
+.rgroup h2 { font-size: 1.5rem; margin-bottom: .6em; }
+.linkgrid--1 { grid-template-columns: 1fr 1fr; gap: 8px; }
+.linkgrid--1 a { min-height: 52px; font-size: .95rem; }
+@media (max-width: 900px) { .rgroups { grid-template-columns: 1fr; } }
+@media (max-width: 480px) { .linkgrid--1 { grid-template-columns: 1fr; } }
+.reviews-embed { margin: 2em 0; }

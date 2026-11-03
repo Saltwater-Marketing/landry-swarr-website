@@ -15,6 +15,7 @@ bodyClass: interior
 <div class="wrap layout{% if sidebar === false %} layout--single{% endif %}">
   <article class="prose">
     {{ content | safe }}
+    {% if reviewsEmbed and site.reviewsWidget %}<div class="reviews-embed">{{ site.reviewsWidget | safe }}</div>{% endif %}
     {% if sidebar !== false %}
     <aside class="inline-cta">
       <div>
