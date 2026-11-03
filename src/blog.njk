@@ -6,8 +6,8 @@ pagination:
   alias: posts
 permalink: "/blog/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}"
 eleventyComputed:
+  description: "{% if pagination.pageNumber > 0 %}Page {{ pagination.pageNumber + 1 }} of articles from{% else %}News and insights from{% endif %} Louisiana mesothelioma lawyers Landry & Swarr on asbestos, talcum powder, benzene, verdicts, treatment and patient resources."
   title: "Mesothelioma, Asbestos & Benzene News Blog{% if pagination.pageNumber > 0 %} – Page {{ pagination.pageNumber + 1 }}{% endif %} | Landry & Swarr"
-description: "News and insights from Louisiana mesothelioma lawyers Landry & Swarr on asbestos, talcum powder, benzene, verdicts, treatment and patient resources."
 bodyClass: interior
 breadcrumbs: [["Blog", "/blog/"]]
 ---

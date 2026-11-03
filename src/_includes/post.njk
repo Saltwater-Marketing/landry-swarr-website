@@ -16,7 +16,8 @@ bodyClass: interior post-page
 
 <div class="wrap layout">
   <article class="prose">
-    {% if image %}<img class="post-feature" src="{{ image }}" alt="" width="1200" height="800" fetchpriority="high">{% endif %}
+    {% if (page.date | yearsAgo) > 3 %}<p class="dated-note">This article was originally published on {{ page.date | readableDate }}. Medical research and the law may have changed since then. <a href="#case-review">Contact us</a> for current information about your situation.</p>{% endif %}
+    {% if image %}<img class="post-feature" src="{{ image }}" alt="{{ heading }}" width="1200" height="800" fetchpriority="high">{% endif %}
     {{ content | safe }}
     <div class="author-box">
       <img src="/images/uploads/2022/03/team-2022-2.webp" alt="Attorneys of Landry & Swarr" width="160" height="107" loading="lazy">

@@ -38,6 +38,8 @@
       "author": { "@type": "Organization", "@id": "{{ site.url }}/#firm", "name": "{{ site.legalName }}" },
       "publisher": { "@id": "{{ site.url }}/#firm" } }
     {% endif %}
+    {% if page.url == "/our-firm/resumes/" %}{% for a in attorneys %},
+    { "@type": ["Person", "Attorney"], "@id": "{{ site.url }}/our-firm/resumes/#{{ a.id }}", "name": {{ a.name | json | safe }}, "jobTitle": {{ a.jobTitle | json | safe }}, "email": "mailto:{{ a.email }}", "image": "{{ a.image | absUrl(site.url) }}", "url": "{{ site.url }}/our-firm/resumes/#{{ a.id }}", "worksFor": { "@id": "{{ site.url }}/#firm" }, "address": { "@type": "PostalAddress", "streetAddress": "1100 Poydras St., Suite 2000", "addressLocality": "New Orleans", "addressRegion": "LA", "postalCode": "70163", "addressCountry": "US" }, "alumniOf": [{% for s in a.alumniOf %}{ "@type": "CollegeOrUniversity", "name": {{ s | json | safe }} }{% if not loop.last %},{% endif %}{% endfor %}] }{% endfor %}{% endif %}
     {% if faqSchema %},
     { "@type": "FAQPage", "mainEntity": {{ faqSchema | json | safe }} }
     {% endif %}

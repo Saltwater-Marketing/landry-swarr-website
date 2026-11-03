@@ -1,0 +1,6 @@
+[
+  { "name": "Mickey P. Landry", "id": "mickey-p-landry", "jobTitle": "Attorney", "email": "mlandry@landryswarr.com", "image": "/images/uploads/2022/03/RJR10027.webp", "alumniOf": ["Louisiana State University", "Loyola University New Orleans College of Law"] },
+  { "name": "Frank J. Swarr", "id": "frank-j-swarr", "jobTitle": "Founding Partner", "email": "fswarr@landryswarr.com", "image": "/images/uploads/2022/03/RJR10062.webp", "alumniOf": ["Louisiana Tech University", "Loyola University New Orleans College of Law"] },
+  { "name": "Matthew C. Clark", "id": "matthew-c-clark", "jobTitle": "Partner", "email": "mclark@landryswarr.com", "image": "/images/uploads/2022/03/RJR10014.webp", "alumniOf": ["University of New Orleans", "Louisiana Tech University", "Loyola University New Orleans College of Law"] },
+  { "name": "Ben Rumph", "id": "ben-rumph", "jobTitle": "Attorney", "email": "brumph@landryswarr.com", "image": "/images/uploads/2024/05/1546273331756.webp", "alumniOf": ["Texas Christian University", "Tulane University Law School"] }
+]

@@ -14,7 +14,7 @@
   --line: #d6deec;
   --copper: #ac340f;
   --copper-2: #8c2a0b;
-  --gold: #ecb229;
+  --gold: #f2c14e;
   --focus: #f0b429;
   --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
   --sans: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
@@ -568,3 +568,6 @@ body { padding-bottom: 0 !important; }
 .fine { font-size: .9rem; }
 @media (max-width: 640px) { body { font-size: 18px; } .prose { font-size: 1.06rem; } }
 @media (max-width: 640px) { .eyebrow { letter-spacing: .1em; font-size: .74rem; } }
+.dated-note { background: var(--sand); border-left: 4px solid var(--navy); border-radius: 4px; padding: 14px 18px; font-size: .95rem !important; margin-bottom: 1.6em; }
+/* Phones: hide breadcrumb trail (still in page markup for Google) */
+@media (max-width: 640px) { .crumbs { display: none; } }

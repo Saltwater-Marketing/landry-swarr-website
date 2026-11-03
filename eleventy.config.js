@@ -11,6 +11,7 @@ export default function (eleventyConfig) {
     return `${months[x.getUTCMonth()]} ${x.getUTCDate()}, ${x.getUTCFullYear()}`;
   });
   eleventyConfig.addFilter("isoDate", (d) => toDate(d).toISOString().slice(0, 10));
+  eleventyConfig.addFilter("yearsAgo", (d) => (Date.now() - toDate(d).getTime()) / (365.25 * 864e5));
   eleventyConfig.addFilter("limit", (arr, n) => (arr || []).slice(0, n));
   eleventyConfig.addFilter("absUrl", (path, base) => new URL(path || "/", base).href);
   eleventyConfig.addFilter("json", (v) => JSON.stringify(v));
