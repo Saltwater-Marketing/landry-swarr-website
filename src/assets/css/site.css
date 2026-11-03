@@ -503,3 +503,15 @@ address { font-style: normal; }
 @media (max-width: 900px) { .rgroups { grid-template-columns: 1fr; } }
 @media (max-width: 480px) { .linkgrid--1 { grid-template-columns: 1fr; } }
 .reviews-embed { margin: 2em 0; }
+/* Two-column dropdowns for long menus (desktop only) */
+@media (min-width: 1121px) {
+  .nav__panel:has(li:nth-child(8)) { min-width: 540px; padding: 10px; }
+  .nav__panel ul:has(> li:nth-child(8)) { display: grid; grid-template-columns: 1fr 1fr; column-gap: 6px; }
+  .nav__panel ul:has(> li:nth-child(8)) > li:first-child { grid-column: 1 / -1; border-bottom: 1px solid var(--line); margin-bottom: 6px; padding-bottom: 6px; }
+  .nav__panel ul:has(> li:nth-child(8)) > li:first-child a { font-weight: 600; color: var(--navy); }
+}
+@media (min-width: 1121px) {
+  .nav__panel ul:has(> li:nth-child(8)) { display: block; columns: 2; column-gap: 6px; }
+  .nav__panel ul:has(> li:nth-child(8)) > li { break-inside: avoid; }
+  .nav__panel ul:has(> li:nth-child(8)) > li:first-child { column-span: all; }
+}
