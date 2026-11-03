@@ -369,3 +369,9 @@ address { font-style: normal; }
 @media (max-width: 640px) { .attorney { grid-template-columns: 1fr; gap: 16px; } .attorney__photo img { max-width: 240px; position: static; } }
 .prose a.result, .prose a.result:hover { color: var(--text); }
 .prose a.result .link-arrow { color: var(--navy-3); }
+.split__media img { border-radius: var(--radius); box-shadow: var(--shadow); width: 100%; }
+.gen-links { list-style: none; padding: 18px 0 0; margin: 22px 0 0; border-top: 1px solid var(--line); display: grid; gap: 8px; }
+.gen-links a { font-weight: 600; text-decoration: none; color: var(--navy); }
+.gen-links a::before { content: "→ "; color: var(--copper); }
+.gen-links a:hover { color: var(--copper); }
+@media (max-width: 900px) { .split__media { order: -1; } }

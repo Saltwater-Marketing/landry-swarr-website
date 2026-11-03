@@ -20,6 +20,11 @@
           "note": "AML, MDS, leukemia & lymphoma"
         },
         {
+          "label": "Genetics & Cancer Causation",
+          "url": "/genetics-cancer-causation/",
+          "note": "Fighting genetic-testing defenses"
+        },
+        {
           "label": "Asbestos Exposure",
           "url": "/asbestos-lawyer/",
           "note": "Shipyards, refineries & plants"
@@ -35,10 +40,6 @@
         {
           "label": "Toxic Chemical Exposure",
           "url": "/toxic-chemical/"
-        },
-        {
-          "label": "Genetics & Cancer Causation",
-          "url": "/genetics-cancer-causation/"
         }
       ]
     },
@@ -159,6 +160,10 @@
           "/benzene-law/"
         ],
         [
+          "Genetics & Cancer Causation",
+          "/genetics-cancer-causation/"
+        ],
+        [
           "Asbestos Exposure",
           "/asbestos-lawyer/"
         ],
@@ -173,10 +178,6 @@
         [
           "Toxic Chemical Exposure",
           "/toxic-chemical/"
-        ],
-        [
-          "Genetics & Cancer Causation",
-          "/genetics-cancer-causation/"
         ],
         [
           "Mesothelioma Lawsuit FAQs",
@@ -387,6 +388,43 @@
         [
           "Mesothelioma Lawyers",
           "/mesothelioma/"
+        ]
+      ]
+    },
+    "genetics": {
+      "title": "Genetics & Causation",
+      "links": [
+        [
+          "Genetics & Cancer Causation",
+          "/genetics-cancer-causation/"
+        ],
+        [
+          "Courts Reject Genetic Testing Defenses",
+          "/multiple-louisiana-courts-reject-genetic-testing-defenses/"
+        ],
+        [
+          "Genetic Defense Rejected in Lung Cancer Case",
+          "/louisiana-court-rejects-genetic-testing-defense-in-asbestos-lung-cancer-case/"
+        ],
+        [
+          "Judge Limits Genetic Testimony in Meso Case",
+          "/louisiana-judge-limits-genetic-testimony-in-meso-case-litigated-by-landry-swarr/"
+        ],
+        [
+          "Landmark Louisiana Mesothelioma Case",
+          "/landry-swarr-wins-landmark-louisiana-mesothelioma-case/"
+        ],
+        [
+          "BAP1 Mutations & Mesothelioma",
+          "/report-finds-that-bap1-mutations-can-help-future-cases-of-mesothelioma/"
+        ],
+        [
+          "Mesothelioma Lawyers",
+          "/mesothelioma/"
+        ],
+        [
+          "Asbestos Lung Cancer",
+          "/lung-cancer/"
         ]
       ]
     }

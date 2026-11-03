@@ -1,6 +1,7 @@
 const SECTION = {
   practice: ["Practice Areas", "/areas-of-practice/"],
   talc: ["Practice Areas", "/areas-of-practice/"],
+  genetics: ["Practice Areas", "/areas-of-practice/"],
   meso: ["Mesothelioma Guide", "/meso-general-info/"],
   asbestos: ["Asbestos Info", "/asbestos-info/"],
   benzene: ["Benzene Exposure", "/benzene-law/"],
