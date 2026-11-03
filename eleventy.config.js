@@ -2,6 +2,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/images": "images" });
   eleventyConfig.addPassthroughCopy({ "src/files": "files" });
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
+  eleventyConfig.addPassthroughCopy({ "src/favicon.ico": "favicon.ico" });
 
   const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
   const toDate = (d) => (d instanceof Date ? d : new Date(d));
